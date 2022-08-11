@@ -1,0 +1,14 @@
+{
+  "name": "cypress",
+  "version": "10.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anshita Bhasin",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.4.0"
+  }
+}
