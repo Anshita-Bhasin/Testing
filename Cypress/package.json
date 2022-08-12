@@ -1,14 +1,43 @@
 {
-  "name": "cypress",
-  "version": "10.0.0",
+  "name": "cypress_cucumber_javascript",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cucumber-report": "node cucumber-html-report.js",
+    "delete-existingJsonReports": "rm -rf cypress/reports/cucumber-json/*.json",
+    "delete-reportFolder": "rm -rf cypress/reports/",
+    "test": "npx cypress run --e2e --browser chrome ",
+    "testing": "npx cypress run -e TAGS='@E2ENaveenAutomationLabs' --e2e --browser chrome  --headed",
+    "TestWithReportGeneration": "npm run delete-reportFolder ;npm run testing ; npm run cucumber-report ; npm run delete-existingJsonReports"
+   
   },
-  "author": "Anshita Bhasin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anshita-Bhasin/Cypress_Cucumber_JavaScript.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anshita-Bhasin/Cypress_Cucumber_JavaScript/issues"
+  },
+  "homepage": "https://github.com/Anshita-Bhasin/Cypress_Cucumber_JavaScript#readme",
   "devDependencies": {
-    "cypress": "^10.4.0"
+    "cypress": "^10.1.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "multiple-cucumber-html-reporter": "^1.21.4"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "commonPath": "cypress/integration/step-definition/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/reports/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "dependencies": {
+    "save-dev": "^0.0.1-security"
   }
 }
