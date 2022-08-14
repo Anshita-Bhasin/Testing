@@ -18,3 +18,4 @@ And('I confirm Order',()=>{
 Then('order should be placed',()=>{
     billingDetailsPage.verifyPlacedOrder();
 });
+//After(()=>{cy.writeFile('cypress/fixtures/browser.json',Cypress.browser)});

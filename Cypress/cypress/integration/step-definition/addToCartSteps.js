@@ -1,4 +1,4 @@
-import { And, Given, Then } from "cypress-cucumber-preprocessor/steps";
+import { After, And, Given, Then } from "cypress-cucumber-preprocessor/steps";
 import addToCartPage from '../../pages/addToCartPage';
 
 
@@ -20,6 +20,8 @@ And('I click on AddToCart', () => { addToCartPage.addToCart(); });
 Then('I should see success message for the {string} added to the cart', (product) => {
     addToCartPage.verifySucessMessage(product);
      });
+
+   //  After(()=>{cy.writeFile('cypress/fixtures/browser.json',Cypress.browser)});
 
    
    

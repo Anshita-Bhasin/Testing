@@ -13,3 +13,4 @@ Then('I should be logged In successfully',()=>
 {
     loginPage.verifyLogin();
 }) 
+//After(()=>{cy.writeFile('cypress/fixtures/browser.json',Cypress.browser)});
