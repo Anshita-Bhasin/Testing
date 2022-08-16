@@ -1,6 +1,6 @@
 
 # Variables:
-1. Global Variable : Variables defined outside the function
+1. Global Variable : Variables defined outside the function.. we can also use "global" keyword to change the scope of variable.
 2. Local Variables: Variables defined inside the function.. Scope is limited within the function only
 3. TypeCasting : x=str(3), x=3 print(type(x))
 4. cannot write variable name with "-",number and space
