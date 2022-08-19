@@ -46,7 +46,7 @@ more than just one line
 
 
 # In Built Method:
-1. len - Length
+1. len - Length.. Eg : len(x)
 2. strip() --> removes the whitespaces from the beginning or the end
 3. replace("old","new") --> replace() method replaces a string with another string
 4. split() --> split() method splits the string into substrings if it finds instances of the separator
