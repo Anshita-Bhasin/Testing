@@ -75,4 +75,6 @@ It Return range of characters using slice.
 3. print(b[2:]) --> get chars from position 2 till end
 4. Negative Indexing --> Use negative indexes to start the slice from the end of the string --> print(b[-5:-2])
 
-5. 
+# Operators
+1. Arithmetic => +, -, /, *, **, //, %
+2. Assignment => =, +=, -=, /=, %=, //=, **=, &=, ^=, >>=, <<=, 
