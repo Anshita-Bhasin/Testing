@@ -81,7 +81,9 @@ It Return range of characters using slice.
 2. Assignment => =, +=, -=, /=, %=, //=, **=, &=, ^=, >>=, <<=,
 
 
-# List
+# Collections
+ 
+ ## List
 In Built Data Type
 1. Ordered => If we add any item, it will be added in the end of the list
 2. Changeable 
