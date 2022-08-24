@@ -1,4 +1,4 @@
-import { And, Given, Then } from "cypress-cucumber-preprocessor/steps";
+import { After, And, Given, Then } from "cypress-cucumber-preprocessor/steps";
 import loginPage from '../../pages/loginPage';
 
 Given('I select to Login', () => {
@@ -13,4 +13,8 @@ Then('I should be logged In successfully',()=>
 {
     loginPage.verifyLogin();
 }) 
-//After(()=>{cy.writeFile('cypress/fixtures/browser.json',Cypress.browser)});
+
+
+after(() => {      
+    cy.writeFile("cypress/fixtures/browser.json",Cypress.browser)
+  });

@@ -14,5 +14,5 @@ Then('I see {string} in the cart is present',(product)=>{
 });
    
 Given('I clear the cart',()=>{ShoppingCartPage.clearcart();});
-//After(()=>{cy.writeFile('cypress/fixtures/browser.json',Cypress.browser)});
+
   

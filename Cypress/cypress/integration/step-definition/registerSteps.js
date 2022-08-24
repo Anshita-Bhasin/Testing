@@ -46,7 +46,6 @@ Given('I enter LoginemailId',()=>{registerPage.enterLogin()})
 
 
 Then('I logout',()=>{registerPage.LogOut();});
-//After(()=>{cy.writeFile('cypress/fixtures/browser.json',Cypress.browser)});
 
 
  

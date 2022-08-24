@@ -21,7 +21,9 @@ Then('I should see success message for the {string} added to the cart', (product
     addToCartPage.verifySucessMessage(product);
      });
 
-   //  After(()=>{cy.writeFile('cypress/fixtures/browser.json',Cypress.browser)});
+     after(() => {      
+        cy.writeFile("cypress/fixtures/browser.json",Cypress.browser)
+      });
 
    
    
