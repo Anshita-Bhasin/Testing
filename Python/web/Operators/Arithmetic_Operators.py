@@ -1,0 +1,7 @@
+print(10+5)
+print(10-5)
+print(100/2)
+print(10*5)
+print(10%5)
+print("Exponential " + 5**2)
+print(10//2)
