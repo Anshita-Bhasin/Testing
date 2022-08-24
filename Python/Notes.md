@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 =======
 # Variables:
 1. Global Variable : Variables defined outside the function.. we can also use "global" keyword to change the scope of variable.
@@ -80,4 +79,4 @@ It Return range of characters using slice.
 # Operators
 1. Arithmetic => +, -, /, *, **, //, %
 2. Assignment => =, +=, -=, /=, %=, //=, **=, &=, ^=, >>=, <<=, 
->>>>>>> 443818c3ac8171c99d99339856be1360a6b238ed
+
