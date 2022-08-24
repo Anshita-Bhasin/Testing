@@ -109,6 +109,6 @@ List, Tuple, Set and Dictionary
  
  1. Ordered
  2. Changeable
- 3. Duplicate Members allowed
+ 3. No Duplicate Members allowed
 
 
