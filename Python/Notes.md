@@ -1,5 +1,5 @@
 
-=======
+
 # Variables:
 1. Global Variable : Variables defined outside the function.. we can also use "global" keyword to change the scope of variable.
 2. Local Variables: Variables defined inside the function.. Scope is limited within the function only
@@ -78,5 +78,14 @@ It Return range of characters using slice.
 
 # Operators
 1. Arithmetic => +, -, /, *, **, //, %
-2. Assignment => =, +=, -=, /=, %=, //=, **=, &=, ^=, >>=, <<=, 
+2. Assignment => =, +=, -=, /=, %=, //=, **=, &=, ^=, >>=, <<=,
+
+
+# List
+In Built Data Type
+1. Ordered => If we add any item, it will be added in the end of the list
+2. Changeable 
+3. Allow Duplicate value => Lists are indexed so it can have items with the same values
+4. Data Type of list is object
+5. 
 
