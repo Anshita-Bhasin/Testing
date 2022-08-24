@@ -82,12 +82,33 @@ It Return range of characters using slice.
 
 
 # Collections
+There are 4 collections:
+List, Tuple, Set and Dictionary
  
  ## List
-In Built Data Type
+
 1. Ordered => If we add any item, it will be added in the end of the list
 2. Changeable 
 3. Allow Duplicate value => Lists are indexed so it can have items with the same values
 4. Data Type of list is object
-5. 
+
+ ## Tuple
+
+1. Ordered
+2. Unchangeable
+3. Allow Duplicate Members
+
+ ## Set
+ 
+ 1. Not Ordered
+ 2. Unchangeable
+ 3. No Duplicate Members allowed
+ 
+ 
+ ## Dictionary
+ 
+ 1. Ordered
+ 2. Changeable
+ 3. Duplicate Members allowed
+
 
