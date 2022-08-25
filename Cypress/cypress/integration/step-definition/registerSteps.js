@@ -1,6 +1,8 @@
 import { And, Before, Given, Then } from "cypress-cucumber-preprocessor/steps";
 import registerPage from '../../pages/registerPage';
-
+after(() => {      //belongs to the cucumber
+    cy.writeFile("cypress/fixtures/browser.json",Cypress.browser)
+  });
 
 Given('I open url', () => {
     registerPage.openUrl();
@@ -44,3 +46,6 @@ Given('I enter LoginemailId',()=>{registerPage.enterLogin()})
 
 
 Then('I logout',()=>{registerPage.LogOut();});
+
+
+ 

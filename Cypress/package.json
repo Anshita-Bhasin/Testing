@@ -8,13 +8,14 @@
     "delete-existingJsonReports": "rm -rf cypress/reports/cucumber-json/*.json",
     "delete-reportFolder": "rm -rf cypress/reports/",
     "test": "npx cypress run --e2e --browser chrome ",
-    "testing": "npx cypress run -e TAGS='@E2ENaveenAutomationLabs' --e2e --browser chrome  --headed",
+    "testing": "npx cypress run -e TAGS='@E2ENaveenAutomationLabsReg' --e2e --browser chrome  --headed",
+    
     "TestWithReportGeneration": "npm run delete-reportFolder ;npm run testing ; npm run cucumber-report ; npm run delete-existingJsonReports"
    
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Anshita-Bhasin/Cypress_Cucumber_JavaScript.git"
+    "url":"git+https://github.com/Anshita-Bhasin/All-In-One-Testing.git"
   },
   "author": "",
   "license": "ISC",

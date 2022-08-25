@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+<<<<<<< HEAD
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/web" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.10 (web)" jdkType="Python SDK" />
+=======
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+>>>>>>> f55a0193afedea5cea40b1208d4d6e7b58acfbb0
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
