@@ -60,11 +60,24 @@ Negative Indexing --> Use negative indexes to start the slice from the end of th
 ## Collections
 There are 4 collections: List, Tuple, Set and Dictionary
 
-1. List: 
+# List: 
 Ordered => If we add any item, it will be added in the end of the list
 Changeable
 Allow Duplicate value => Lists are indexed so it can have items with the same values
 Data Type of list is object
+
+
+ # List In Built Methods:
+ 1. pop()
+2. remove()
+3. exend()
+4. len()
+5. append()
+6. insert()
+7. del
+8. clear()
+9. 
+
 
 2. Tuple
 Ordered
