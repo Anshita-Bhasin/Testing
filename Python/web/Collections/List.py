@@ -123,3 +123,39 @@ print(Test1)
 
 print(len(Test1))
 
+
+# Loop :
+
+i=[1,2,3,"ab","xy"]
+for x in i:
+    print(i)
+
+
+
+# Loop Through Index Numbers:
+
+o=["test","dev","BA"]
+for x in range (len(o)):
+    print((o[x]))
+
+# While Looop
+
+list4 = ["A1","A2","A3"]
+i=0
+while i < len(list4):
+    print(list4[i])
+    i=1+1
+    break
+
+loop1 = ["abc", "123", "java", "people"]
+[print(x) for x in loop1]
+
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
+
+
+
+
