@@ -1,5 +1,5 @@
 @E2ENaveenAutomationLabsReg
-Feature: End to end testing on naveenautomationlabs
+Feature: Register And Login
 
        Scenario: Fill all the mandatory information and register on the website
               Given I open url

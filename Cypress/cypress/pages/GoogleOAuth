@@ -1,0 +1,27 @@
+
+
+let url = Cypress.env('backofficeURL');
+export class GoogleOAuth  {
+
+  GoogleOauthlogin() {
+
+    cy.request({
+      method: 'POST',
+      url: url + '/v1-login-by-username',
+      body: {
+        username: Cypress.env('username'),
+        password: Cypress.env('password'),
+        rememberMe: false,
+      },
+    }).then((response) => {
+      cy.visit(
+        url + '/login?status=success&token=' + response.body.token,
+      );
+    });
+
+
+
+    
+  }
+}
+  
