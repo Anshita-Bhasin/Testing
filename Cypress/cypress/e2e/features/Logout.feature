@@ -1,5 +1,5 @@
 @E2ENaveenAutomationLabsLogout
-Feature: End to end testing on naveenautomationlabs
+Feature: Login and Logout
 
        Scenario: Login and Logout
 
