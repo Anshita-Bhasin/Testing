@@ -1,1 +1,40 @@
 
+name: Cypress Automation
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  Cypress-Test:
+    timeout-minutes: 120
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: cypress-Test-report
+        uses: cypress-io/github-action@v2
+        with:
+          command: npm run TestWithReportGeneration
+          browser: chrome
+          
+      - name: Upload Report to GithubActions
+        uses: actions/upload-artifact@v2
+        with:
+          name: HTML_Report
+          path: cypress/reports/Results
+          retention-days: 5 
+      - name: Upload Report to AWS S3
+        uses: shallwefootball/s3-upload-action@master
+        id: S3
+        with:
+          aws_key_id: ${{secrets.AWS_KEY_ID}}
+          aws_secret_access_key: ${{secrets.AWS_ACCESS_KEY}}
+          aws_bucket: bucketName
+          source_dir: cypress/reports/Results
+      - name: Link To AWS S3 Bucket Report
+        run: >
+          echo
+          "https://s3.amazonaws.com/b2b-web-automation/${{steps.S3.outputs.object_key}}/index.html"
