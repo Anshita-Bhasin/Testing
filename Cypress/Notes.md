@@ -16,7 +16,10 @@ Pre-Requisite : Node.js 12 or 14 and above
 
 # Browser:
 
-1. Install Safari Webkit, run command - npm install --save-dev playwright-webkit
+1. Install Safari Webkit:
+  
+  run command - npm install --save-dev playwright-webkit
+  Add experimentalWebKitSupport: true to cypress.config.js
 
 
 
