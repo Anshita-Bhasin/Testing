@@ -69,5 +69,31 @@ Pre-Requisite : Node.js 12 or 14 and above
 1. npm install cypress-parallel => To run test in parallel on local (https://github.com/tnicola/cypress-parallel )
 
 
+# Cucumber Installation
+
+1. npm i @badeball/cypress-cucumber-preprocessor
+2. npm i cypress @bahmutov/cypress-esbuild-preprocessor esbuild
+
+
+
+# Hide XHR Request call in cypress 
+1. Copy the below code in support /e2e.js for Cypress10 or cypress/support/index.js (Below Cypress 10)
+
+This workaround simply hides any command log entries that originate from fetch/XHR requests.
+
+
+**Syntax**
+// Hide fetch/XHR requests
+const app = window.top;
+if (!app.document.head.querySelector('[data-hide-command-log-request]')) {
+  const style = app.document.createElement('style');
+  style.innerHTML =
+    '.command-name-request, .command-name-xhr { display: none }';
+  style.setAttribute('data-hide-command-log-request', '');
+
+  app.document.head.appendChild(style);
+}
+
+
 
 
