@@ -65,6 +65,8 @@ Pre-Requisite : Node.js 12 or 14 and above
 1. Install npm install -D cypress-xpath
 2. require('cypress-xpath')
 
+# Dependencies
+1. npm install cypress-parallel => To run test in parallel on local (https://github.com/tnicola/cypress-parallel )
 
 
 
