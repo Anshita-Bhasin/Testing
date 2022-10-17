@@ -12,6 +12,7 @@ Pre-Requisite : Node.js 12 or 14 and above
 6. Add support for feature files ,code in cypress.config.js :
    specPattern: 'cypress/e2e/features/*.{feature,features}',
     excludeSpecPattern: "**/cypress/pages/*,cypress/e2e/step-definition/*"    
+7. npm install cypress-commands => To find out text    
  
 
 # Browser:
