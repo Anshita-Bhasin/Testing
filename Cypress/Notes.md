@@ -13,6 +13,9 @@ Pre-Requisite : Node.js 12 or 14 and above
    specPattern: 'cypress/e2e/features/*.{feature,features}',
     excludeSpecPattern: "**/cypress/pages/*,cypress/e2e/step-definition/*"    
 7. npm install cypress-commands => To find out text    
+8. Cypress .press() command that simulates pressing a keyboard key.
+
+
  
 
 # Browser:
@@ -96,5 +99,10 @@ if (!app.document.head.querySelector('[data-hide-command-log-request]')) {
 }
 
 
+# Cypress - Plugin for pressing any keyboard command
+Cypress .press() command that simulates pressing a keyboard key.
+
+Installation
+Run npm i @walmyr-filho/cy-press -D to install it as a dev dependency.
 
 
