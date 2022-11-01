@@ -3,7 +3,7 @@
 /*
     In the framework module, we create a class called BasePage.
     All page object classes will extend the BasePage, thus inheriting all the base methods.
- */
+ 
     import 'cypress-file-upload';
     
     import { format } from 'date-fns';
@@ -12,7 +12,7 @@
     export class BasePage {
       /*locatorType : this should be one of these - 'class' , 'id', 'name' , 'text' , 'title'
        * attributeValue : is the value of locator
-       */
+      
       clickOnLink(locator: string) {
         try {
           cy.get(locator).then(($el): void => {
@@ -103,13 +103,12 @@
         cy.get(locator1).find(locator2).contains(value).click();
       }
     
-      
-      /* This function is to click on submit button */
+     This function is to click on submit button 
       clickOnSubmitButton() {
         cy.get('button[type="submit"]').click();
       }
     
-      /* This function is to verify text in table column */
+      /* This function is to verify text in table column 
       verifyValueInTable(colNum: number, text: string) {
         cy.get('tbody tr')
           .first()
@@ -120,4 +119,4 @@
     
       
     }
-    
+    */
